@@ -13,14 +13,22 @@ ffmpeg -list_devices true -f dshow -i dummy
 ```
 
 ## list capture device options
+
 ```
 ffmpeg -f dshow -list_options true -i video="Integrated Webcam"
 ```
 
 ## Record segmented video
--segment_time 600 - vide length in seconds
--segment_wrap 6
+-segment_time 600 - video length in seconds
+
+-segment_wrap 6 - video amount
 
 ```
 ffmpeg -loglevel panic -hwaccel qsv -f dshow -video_size 1920x1080 -framerate 30 -vcodec mjpeg -i video="C922 Pro Stream Webcam" -codec:v libx264 -preset ultrafast -crf 24 -tune zerolatency -filter:v scale=1280:-1 -map 0 -f segment -segment_time 600 -segment_wrap 6 dvr_%04d.avi -codec:v copy -f nut - | ffplay -i -window_title "Krāsošanas kamera" -
+```
+
+## Pass video pipe to VLC
+
+```
+ffmpeg -loglevel panic -hwaccel qsv -f dshow -video_size 1920x1080 -framerate 30 -vcodec mjpeg -i video="C922 Pro Stream Webcam" -codec:v libx264 -preset ultrafast -crf 24 -tune zerolatency -filter:v scale=1280:-1 -map 0 -f segment -segment_time 600 -segment_wrap 6 dvr_%04d.avi -codec:v copy -f nut - | vlc --fullscreen -
 ```
