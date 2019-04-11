@@ -1,5 +1,16 @@
+# driver
+
+You can force install on Windows 10 old Logitech drivers, as they have a much larger pool of supported formats and framerates. Like yuv420p directly from the C920 camera.
+
+64-bit
+```LWS_Driver_Installer_x64\PRO564\lpro564c```
+
+32-bit
+```LWS_Driver_Installer_x86\PRO564\lvpro5c```
+
+
 #logitech c920 to vlc stream in windows
-## Add vlc to windows path
+## VLC display webcam
 
 ```
 vlc --fullscreen dshow:// :dshow-vdev="HD Pro Webcam C920" :dshow-size="1920x1080" :dshow-aspect-ratio=16\:9 :dshow-chroma="MJPG" :no-dshow-config

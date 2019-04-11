@@ -1,0 +1,2403 @@
+;-------------------------------------------------------
+; File: lvPRO5s.inf
+; Logitech Video2 Camera Installation file
+; Copyright (c) 1996-2011 Logitech Inc.
+;-------------------------------------------------------
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+provider=%PVD%
+CatalogFile=lvPRO5s.cat
+LayoutFile=layout.inf, layout1.inf, layout2.inf
+DriverVer=12/14/2011, 13.40.840.0
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles]
+lvcoinst.dll=1
+lvcoinst.ini=1
+Repository.reg=1
+lvrs.sys=1
+WUApp32.exe=1
+
+[Manufacturer]
+%MfgName%=Logitech,NT.6.0
+
+[Logitech]
+%USB\VID_046D&PID_0802.DeviceDesc%=PCM2USB.PID0802,usb\vid_046d&pid_0802&mi_01
+%USB\VID_046D&PID_0802.DeviceDesc%=PCM2USB.PID0802,usb\vid_046d&pid_0802&mi_02
+%USB\VID_046D&PID_0804.DeviceDesc%=PCM2USB.PID0804,usb\vid_046d&pid_0804&mi_01
+%USB\VID_046D&PID_0804.DeviceDesc%=PCM2USB.PID0804,usb\vid_046d&pid_0804&mi_02
+%USB\VID_046D&PID_0805.DeviceDesc%=PCM2USB.PID0805,usb\vid_046d&pid_0805&mi_01
+%USB\VID_046D&PID_0805.DeviceDesc%=PCM2USB.PID0805,usb\vid_046d&pid_0805&mi_02
+%USB\VID_046D&PID_0807.DeviceDesc%=PCM2USB.PID0807,usb\vid_046d&pid_0807&mi_01
+%USB\VID_046D&PID_0807.DeviceDesc%=PCM2USB.PID0807,usb\vid_046d&pid_0807&mi_02
+%USB\VID_046D&PID_0808.DeviceDesc%=PCM2USB.PID0808,usb\vid_046d&pid_0808&mi_01
+%USB\VID_046D&PID_0808.DeviceDesc%=PCM2USB.PID0808,usb\vid_046d&pid_0808&mi_02
+%USB\VID_046D&PID_0809.DeviceDesc%=PCM2USB.PID0809,usb\vid_046d&pid_0809&mi_01
+%USB\VID_046D&PID_0809.DeviceDesc%=PCM2USB.PID0809,usb\vid_046d&pid_0809&mi_02
+%USB\VID_046D&PID_080A.DeviceDesc%=PCM2USB.PID080A,usb\vid_046d&pid_080a&mi_01
+%USB\VID_046D&PID_080A.DeviceDesc%=PCM2USB.PID080A,usb\vid_046d&pid_080a&mi_02
+%USB\VID_046D&PID_0819.DeviceDesc%=PCM2USB.PID0819,usb\vid_046d&pid_0819&mi_01
+%USB\VID_046D&PID_0819.DeviceDesc%=PCM2USB.PID0819,usb\vid_046d&pid_0819&mi_02
+%USB\VID_046D&PID_081A.DeviceDesc%=PCM2USB.PID081A,usb\vid_046d&pid_081a&mi_01
+%USB\VID_046D&PID_081A.DeviceDesc%=PCM2USB.PID081A,usb\vid_046d&pid_081a&mi_02
+%USB\VID_046D&PID_081B.DeviceDesc%=PCM2USB.PID081B,usb\vid_046d&pid_081b&mi_01
+%USB\VID_046D&PID_081B.DeviceDesc%=PCM2USB.PID081B,usb\vid_046d&pid_081b&mi_02
+%USB\VID_046D&PID_081D.DeviceDesc%=PCM2USB.PID081D,usb\vid_046d&pid_081d&mi_00
+%USB\VID_046D&PID_081D.DeviceDesc%=PCM2USB.PID081D,usb\vid_046d&pid_081d&mi_01
+%USB\VID_046D&PID_0821.DeviceDesc%=PCM2USB.PID0821,usb\vid_046d&pid_0821&mi_00
+%USB\VID_046D&PID_0821.DeviceDesc%=PCM2USB.PID0821,usb\vid_046d&pid_0821&mi_01
+%USB\VID_046D&PID_0823.DeviceDesc%=PCM2USB.PID0823,usb\vid_046d&pid_0823&mi_00
+%USB\VID_046D&PID_0823.DeviceDesc%=PCM2USB.PID0823,usb\vid_046d&pid_0823&mi_01
+%USB\VID_046D&PID_0824.DeviceDesc%=PCM2USB.PID0824,usb\vid_046d&pid_0824&mi_01
+%USB\VID_046D&PID_0824.DeviceDesc%=PCM2USB.PID0824,usb\vid_046d&pid_0824&mi_02
+%USB\VID_046D&PID_0825.DeviceDesc%=PCM2USB.PID0825,usb\vid_046d&pid_0825&mi_01
+%USB\VID_046D&PID_0825.DeviceDesc%=PCM2USB.PID0825,usb\vid_046d&pid_0825&mi_02
+%USB\VID_046D&PID_0826.DeviceDesc%=PCM2USB.PID0826,usb\vid_046d&pid_0826&mi_00
+%USB\VID_046D&PID_0826.DeviceDesc%=PCM2USB.PID0826,usb\vid_046d&pid_0826&mi_01
+%USB\VID_046D&PID_0829.DeviceDesc%=PCM2USB.PID0829,usb\vid_046d&pid_0829&mi_01
+%USB\VID_046D&PID_0829.DeviceDesc%=PCM2USB.PID0829,usb\vid_046d&pid_0829&mi_02
+%USB\VID_046D&PID_082B.DeviceDesc%=PCM2USB.PID082B,usb\vid_046d&pid_082b&mi_01
+%USB\VID_046D&PID_082B.DeviceDesc%=PCM2USB.PID082B,usb\vid_046d&pid_082b&mi_02
+%USB\VID_046D&PID_082C.DeviceDesc%=PCM2USB.PID082C,usb\vid_046d&pid_082c&mi_00
+%USB\VID_046D&PID_082C.DeviceDesc%=PCM2USB.PID082C,usb\vid_046d&pid_082c&mi_01
+%USB\VID_046D&PID_082D.DeviceDesc%=PCM2USB.PID082D,usb\vid_046d&pid_082d&mi_01
+%USB\VID_046D&PID_082D.DeviceDesc%=PCM2USB.PID082D,usb\vid_046d&pid_082d&mi_02
+%USB\VID_046D&PID_0834.DeviceDesc%=PCM2USB.PID0834,usb\vid_046d&pid_0834&mi_01
+%USB\VID_046D&PID_0834.DeviceDesc%=PCM2USB.PID0834,usb\vid_046d&pid_0834&mi_02
+%USB\VID_046D&PID_0836.DeviceDesc%=PCM2USB.PID0836,usb\vid_046d&pid_0836&mi_00
+%USB\VID_046D&PID_0836.DeviceDesc%=PCM2USB.PID0836,usb\vid_046d&pid_0836&mi_01
+%USB\VID_046D&PID_0990.DeviceDesc%=PCM2USB.PID0990,usb\vid_046d&pid_0990&mi_01
+%USB\VID_046D&PID_0990.DeviceDesc%=PCM2USB.PID0990,usb\vid_046d&pid_0990&mi_02
+%USB\VID_046D&PID_0991.DeviceDesc%=PCM2USB.PID0991,usb\vid_046d&pid_0991&mi_01
+%USB\VID_046D&PID_0991.DeviceDesc%=PCM2USB.PID0991,usb\vid_046d&pid_0991&mi_02
+%USB\VID_046D&PID_0994.DeviceDesc%=PCM2USB.PID0994,usb\vid_046d&pid_0994&mi_01
+%USB\VID_046D&PID_0994.DeviceDesc%=PCM2USB.PID0994,usb\vid_046d&pid_0994&mi_02
+%USB\VID_046D&PID_09A5.DeviceDesc%=PCM2USB.PID09A5,usb\vid_046d&pid_09a5&mi_01
+%USB\VID_046D&PID_09A5.DeviceDesc%=PCM2USB.PID09A5,usb\vid_046d&pid_09a5&mi_02
+
+[Logitech.NT.6.0]
+%USB\VID_046D&PID_0802.DeviceDesc%=PID0802.VISTA,usb\vid_046d&pid_0802&mi_01
+%USB\VID_046D&PID_0802.DeviceDesc%=PID0802.VISTA,usb\vid_046d&pid_0802&mi_02
+%USB\VID_046D&PID_0804.DeviceDesc%=PID0804.VISTA,usb\vid_046d&pid_0804&mi_01
+%USB\VID_046D&PID_0804.DeviceDesc%=PID0804.VISTA,usb\vid_046d&pid_0804&mi_02
+%USB\VID_046D&PID_0805.DeviceDesc%=PID0805.VISTA,usb\vid_046d&pid_0805&mi_01
+%USB\VID_046D&PID_0805.DeviceDesc%=PID0805.VISTA,usb\vid_046d&pid_0805&mi_02
+%USB\VID_046D&PID_0807.DeviceDesc%=PID0807.VISTA,usb\vid_046d&pid_0807&mi_01
+%USB\VID_046D&PID_0807.DeviceDesc%=PID0807.VISTA,usb\vid_046d&pid_0807&mi_02
+%USB\VID_046D&PID_0808.DeviceDesc%=PID0808.VISTA,usb\vid_046d&pid_0808&mi_01
+%USB\VID_046D&PID_0808.DeviceDesc%=PID0808.VISTA,usb\vid_046d&pid_0808&mi_02
+%USB\VID_046D&PID_0809.DeviceDesc%=PID0809.VISTA,usb\vid_046d&pid_0809&mi_01
+%USB\VID_046D&PID_0809.DeviceDesc%=PID0809.VISTA,usb\vid_046d&pid_0809&mi_02
+%USB\VID_046D&PID_080A.DeviceDesc%=PID080A.VISTA,usb\vid_046d&pid_080a&mi_01
+%USB\VID_046D&PID_080A.DeviceDesc%=PID080A.VISTA,usb\vid_046d&pid_080a&mi_02
+%USB\VID_046D&PID_0819.DeviceDesc%=PID0819.VISTA,usb\vid_046d&pid_0819&mi_01
+%USB\VID_046D&PID_0819.DeviceDesc%=PID0819.VISTA,usb\vid_046d&pid_0819&mi_02
+%USB\VID_046D&PID_081A.DeviceDesc%=PID081A.VISTA,usb\vid_046d&pid_081a&mi_01
+%USB\VID_046D&PID_081A.DeviceDesc%=PID081A.VISTA,usb\vid_046d&pid_081a&mi_02
+%USB\VID_046D&PID_081B.DeviceDesc%=PID081B.VISTA,usb\vid_046d&pid_081b&mi_01
+%USB\VID_046D&PID_081B.DeviceDesc%=PID081B.VISTA,usb\vid_046d&pid_081b&mi_02
+%USB\VID_046D&PID_081D.DeviceDesc%=PID081D.VISTA,usb\vid_046d&pid_081d&mi_00
+%USB\VID_046D&PID_081D.DeviceDesc%=PID081D.VISTA,usb\vid_046d&pid_081d&mi_01
+%USB\VID_046D&PID_0821.DeviceDesc%=PID0821.VISTA,usb\vid_046d&pid_0821&mi_00
+%USB\VID_046D&PID_0821.DeviceDesc%=PID0821.VISTA,usb\vid_046d&pid_0821&mi_01
+%USB\VID_046D&PID_0823.DeviceDesc%=PID0823.VISTA,usb\vid_046d&pid_0823&mi_00
+%USB\VID_046D&PID_0823.DeviceDesc%=PID0823.VISTA,usb\vid_046d&pid_0823&mi_01
+%USB\VID_046D&PID_0824.DeviceDesc%=PID0824.VISTA,usb\vid_046d&pid_0824&mi_01
+%USB\VID_046D&PID_0824.DeviceDesc%=PID0824.VISTA,usb\vid_046d&pid_0824&mi_02
+%USB\VID_046D&PID_0825.DeviceDesc%=PID0825.VISTA,usb\vid_046d&pid_0825&mi_01
+%USB\VID_046D&PID_0825.DeviceDesc%=PID0825.VISTA,usb\vid_046d&pid_0825&mi_02
+%USB\VID_046D&PID_0826.DeviceDesc%=PID0826.VISTA,usb\vid_046d&pid_0826&mi_00
+%USB\VID_046D&PID_0826.DeviceDesc%=PID0826.VISTA,usb\vid_046d&pid_0826&mi_01
+%USB\VID_046D&PID_0829.DeviceDesc%=PID0829.VISTA,usb\vid_046d&pid_0829&mi_01
+%USB\VID_046D&PID_0829.DeviceDesc%=PID0829.VISTA,usb\vid_046d&pid_0829&mi_02
+%USB\VID_046D&PID_082B.DeviceDesc%=PID082B.VISTA,usb\vid_046d&pid_082b&mi_01
+%USB\VID_046D&PID_082B.DeviceDesc%=PID082B.VISTA,usb\vid_046d&pid_082b&mi_02
+%USB\VID_046D&PID_082C.DeviceDesc%=PID082C.VISTA,usb\vid_046d&pid_082c&mi_00
+%USB\VID_046D&PID_082C.DeviceDesc%=PID082C.VISTA,usb\vid_046d&pid_082c&mi_01
+%USB\VID_046D&PID_082D.DeviceDesc%=PID082D.VISTA,usb\vid_046d&pid_082d&mi_01
+%USB\VID_046D&PID_082D.DeviceDesc%=PID082D.VISTA,usb\vid_046d&pid_082d&mi_02
+%USB\VID_046D&PID_0834.DeviceDesc%=PID0834.VISTA,usb\vid_046d&pid_0834&mi_01
+%USB\VID_046D&PID_0834.DeviceDesc%=PID0834.VISTA,usb\vid_046d&pid_0834&mi_02
+%USB\VID_046D&PID_0836.DeviceDesc%=PID0836.VISTA,usb\vid_046d&pid_0836&mi_00
+%USB\VID_046D&PID_0836.DeviceDesc%=PID0836.VISTA,usb\vid_046d&pid_0836&mi_01
+%USB\VID_046D&PID_0990.DeviceDesc%=PID0990.VISTA,usb\vid_046d&pid_0990&mi_01
+%USB\VID_046D&PID_0990.DeviceDesc%=PID0990.VISTA,usb\vid_046d&pid_0990&mi_02
+%USB\VID_046D&PID_0991.DeviceDesc%=PID0991.VISTA,usb\vid_046d&pid_0991&mi_01
+%USB\VID_046D&PID_0991.DeviceDesc%=PID0991.VISTA,usb\vid_046d&pid_0991&mi_02
+%USB\VID_046D&PID_0994.DeviceDesc%=PID0994.VISTA,usb\vid_046d&pid_0994&mi_01
+%USB\VID_046D&PID_0994.DeviceDesc%=PID0994.VISTA,usb\vid_046d&pid_0994&mi_02
+%USB\VID_046D&PID_09A5.DeviceDesc%=PID09A5.VISTA,usb\vid_046d&pid_09a5&mi_01
+%USB\VID_046D&PID_09A5.DeviceDesc%=PID09A5.VISTA,usb\vid_046d&pid_09a5&mi_02
+
+[DestinationDirs]
+DefaultDestDir=10,system32\drivers
+CopyCoInstaller=11
+RightSound.CopyFile=10,system32\drivers
+WUAPP32.Files=16427,logishrd
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[PCM2USB.PID0802]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0802.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0802.Interface,
+
+[PCM2USB.PID0802.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0802, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0802.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0802.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0802, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0802.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0802]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0802.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0802.DeviceDesc%
+
+[PCM2USB.PID0802.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0802.Interface,
+
+[PID0802.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0802.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0802.Interface,
+
+[PCM2USB.PID0802.Interface]
+AddReg=PCM2USB.PID0802.Int.Addreg
+
+[PCM2USB.PID0802.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0802.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0802.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0802.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0802.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0802.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0804]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0804.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0804.Interface,
+
+[PCM2USB.PID0804.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0804, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0804.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0804.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0804, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0804.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0804]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0804.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0804.DeviceDesc%
+
+[PCM2USB.PID0804.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0804.Interface,
+
+[PID0804.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0804.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0804.Interface,
+
+[PCM2USB.PID0804.Interface]
+AddReg=PCM2USB.PID0804.Int.Addreg
+
+[PCM2USB.PID0804.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0804.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0804.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0804.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0804.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0804.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0805]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0805.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0805.Interface,
+
+[PCM2USB.PID0805.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0805, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0805.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0805.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0805, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0805.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0805]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0805.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0805.DeviceDesc%
+
+[PCM2USB.PID0805.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0805.Interface,
+
+[PID0805.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0805.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0805.Interface,
+
+[PCM2USB.PID0805.Interface]
+AddReg=PCM2USB.PID0805.Int.Addreg
+
+[PCM2USB.PID0805.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0805.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0805.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0805.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0805.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0805.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0807]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0807.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0807.Interface,
+
+[PCM2USB.PID0807.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0807, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0807.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0807.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0807, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0807.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0807]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0807.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0807.DeviceDesc%
+
+[PCM2USB.PID0807.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0807.Interface,
+
+[PID0807.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0807.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0807.Interface,
+
+[PCM2USB.PID0807.Interface]
+AddReg=PCM2USB.PID0807.Int.Addreg
+
+[PCM2USB.PID0807.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0807.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0807.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0807.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0807.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0807.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0808]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0808.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0808.Interface,
+
+[PCM2USB.PID0808.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0808, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0808.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0808.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0808, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0808.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0808]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0808.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0808.DeviceDesc%
+
+[PCM2USB.PID0808.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0808.Interface,
+
+[PID0808.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0808.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0808.Interface,
+
+[PCM2USB.PID0808.Interface]
+AddReg=PCM2USB.PID0808.Int.Addreg
+
+[PCM2USB.PID0808.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0808.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0808.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0808.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0808.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0808.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0809]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0809.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0809.Interface,
+
+[PCM2USB.PID0809.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0809, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0809.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0809.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0809, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0809.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0809]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0809.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0809.DeviceDesc%
+
+[PCM2USB.PID0809.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0809.Interface,
+
+[PID0809.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0809.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0809.Interface,
+
+[PCM2USB.PID0809.Interface]
+AddReg=PCM2USB.PID0809.Int.Addreg
+
+[PCM2USB.PID0809.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0809.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0809.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0809.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0809.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0809.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID080A]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID080A.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID080A.Interface,
+
+[PCM2USB.PID080A.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID080A, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID080A.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID080A.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID080A, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID080A.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID080A]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_080A.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_080A.DeviceDesc%
+
+[PCM2USB.PID080A.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID080A.Interface,
+
+[PID080A.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID080A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID080A.Interface,
+
+[PCM2USB.PID080A.Interface]
+AddReg=PCM2USB.PID080A.Int.Addreg
+
+[PCM2USB.PID080A.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_080A.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID080A.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID080A.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID080A.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID080A.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0819]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0819.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0819.Interface,
+
+[PCM2USB.PID0819.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0819, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0819.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0819.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0819, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0819.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0819]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0819.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0819.DeviceDesc%
+
+[PCM2USB.PID0819.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0819.Interface,
+
+[PID0819.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0819.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0819.Interface,
+
+[PCM2USB.PID0819.Interface]
+AddReg=PCM2USB.PID0819.Int.Addreg
+
+[PCM2USB.PID0819.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0819.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0819.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0819.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0819.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0819.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID081A]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081A.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081A.Interface,
+
+[PCM2USB.PID081A.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081A, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081A.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID081A.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081A, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID081A.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID081A]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_081A.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_081A.DeviceDesc%
+
+[PCM2USB.PID081A.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081A.Interface,
+
+[PID081A.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081A.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081A.Interface,
+
+[PCM2USB.PID081A.Interface]
+AddReg=PCM2USB.PID081A.Int.Addreg
+
+[PCM2USB.PID081A.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_081A.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID081A.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID081A.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID081A.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID081A.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID081B]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081B.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081B.Interface,
+
+[PCM2USB.PID081B.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081B, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081B.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID081B.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081B, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID081B.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID081B]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_081B.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_081B.DeviceDesc%
+
+[PCM2USB.PID081B.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081B.Interface,
+
+[PID081B.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081B.Interface,
+
+[PCM2USB.PID081B.Interface]
+AddReg=PCM2USB.PID081B.Int.Addreg
+
+[PCM2USB.PID081B.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_081B.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID081B.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID081B.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID081B.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID081B.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID081D]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081D.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081D.Interface,
+
+[PCM2USB.PID081D.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081D, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID081D.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID081D.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID081D, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID081D.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID081D]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_081D.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_081D.DeviceDesc%
+
+[PCM2USB.PID081D.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081D.Interface,
+
+[PID081D.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID081D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID081D.Interface,
+
+[PCM2USB.PID081D.Interface]
+AddReg=PCM2USB.PID081D.Int.Addreg
+
+[PCM2USB.PID081D.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_081D.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID081D.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID081D.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID081D.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID081D.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0821]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0821.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0821.Interface,
+
+[PCM2USB.PID0821.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0821, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0821.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0821.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0821, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0821.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0821]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0821.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0821.DeviceDesc%
+
+[PCM2USB.PID0821.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0821.Interface,
+
+[PID0821.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0821.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0821.Interface,
+
+[PCM2USB.PID0821.Interface]
+AddReg=PCM2USB.PID0821.Int.Addreg
+
+[PCM2USB.PID0821.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0821.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+HKR,"EP\\0", %PKEY_AudioEngine_OEMFormat%,0x00001,41,00,00,00,28,00,00,00,FE,FF,02,00,00,7D,00,00,00,F4,01,00,04,00,10,00,16,00,10,00,03,00,00,00,01,00,00,00,00,00,10,00,80,00,00,AA,00,38,9B,71
+HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_MICROPHONE%
+
+[PCM2USB.PID0821.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0821.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0821.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0821.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0823]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0823.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0823.Interface,
+
+[PCM2USB.PID0823.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0823, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0823.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0823.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0823, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0823.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0823]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0823.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0823.DeviceDesc%
+
+[PCM2USB.PID0823.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0823.Interface,
+
+[PID0823.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0823.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0823.Interface,
+
+[PCM2USB.PID0823.Interface]
+AddReg=PCM2USB.PID0823.Int.Addreg
+
+[PCM2USB.PID0823.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0823.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0823.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0823.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0823.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0823.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0824.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0824, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0824.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0824.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0824, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0824.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0824]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0824.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0824.DeviceDesc%
+
+[PCM2USB.PID0824.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0824.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0824.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0824.Interface,
+
+[PID0824.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0824.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0824.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0824.Interface,
+
+[PCM2USB.PID0824.Interface]
+AddReg=PCM2USB.PID0824.Int.Addreg
+
+[PCM2USB.PID0824.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0824.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0824.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0824.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0824.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0824.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0825.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0825, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0825.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0825.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0825, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0825.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0825]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0825.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0825.DeviceDesc%
+
+[PCM2USB.PID0825.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0825.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0825.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0825.Interface,
+
+[PID0825.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0825.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0825.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0825.Interface,
+
+[PCM2USB.PID0825.Interface]
+AddReg=PCM2USB.PID0825.Int.Addreg
+
+[PCM2USB.PID0825.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0825.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0825.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0825.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0825.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0825.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0829]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0829.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0829.Interface,
+
+[PCM2USB.PID0829.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0829, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0829.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0829.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0829, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0829.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0829]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0829.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0829.DeviceDesc%
+
+[PCM2USB.PID0829.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0829.Interface,
+
+[PID0829.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0829.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0829.Interface,
+
+[PCM2USB.PID0829.Interface]
+AddReg=PCM2USB.PID0829.Int.Addreg
+
+[PCM2USB.PID0829.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0829.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0829.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0829.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0829.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0829.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID082B]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082B.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082B.Interface,
+
+[PCM2USB.PID082B.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082B, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082B.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID082B.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082B, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID082B.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID082B]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_082B.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_082B.DeviceDesc%
+
+[PCM2USB.PID082B.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082B.Interface,
+
+[PID082B.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082B.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082B.Interface,
+
+[PCM2USB.PID082B.Interface]
+AddReg=PCM2USB.PID082B.Int.Addreg
+
+[PCM2USB.PID082B.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_082B.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID082B.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID082B.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID082B.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID082B.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0826]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0826.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0826.Interface,
+
+[PCM2USB.PID0826.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0826, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0826.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0826.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0826, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0826.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0826]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0826.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0826.DeviceDesc%
+
+[PCM2USB.PID0826.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0826.Interface,
+
+[PID0826.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0826.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0826.Interface,
+
+[PCM2USB.PID0826.Interface]
+AddReg=PCM2USB.PID0826.Int.Addreg
+
+[PCM2USB.PID0826.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0826.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0826.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0826.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0826.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0826.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID082C]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082C.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082C.Interface,
+
+[PCM2USB.PID082C.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082C, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082C.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID082C.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082C, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID082C.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID082C]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_082C.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_082C.DeviceDesc%
+
+[PCM2USB.PID082C.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082C.Interface,
+
+[PID082C.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082C.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082C.Interface,
+
+[PCM2USB.PID082C.Interface]
+AddReg=PCM2USB.PID082C.Int.Addreg
+
+[PCM2USB.PID082C.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_082C.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID082C.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID082C.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID082C.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID082C.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID082D]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082D.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082D.Interface,
+
+[PCM2USB.PID082D.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082D, RecordDevice.AddReg.NT, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files, RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID082D.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID082D.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID082D, RecordDevice.AddReg.NT, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files, RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID082D.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID082D]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_082D.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_082D.DeviceDesc%
+
+[PCM2USB.PID082D.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082D.Interface,
+
+[PID082D.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID082D.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID082D.Interface,
+
+[PCM2USB.PID082D.Interface]
+AddReg=PCM2USB.PID082D.Int.Addreg
+
+[PCM2USB.PID082D.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_082D.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID082D.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID082D.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID082D.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID082D.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0834]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0834.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0834.Interface,
+
+[PCM2USB.PID0834.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0834, RecordDevice.AddReg.NT
+CopyFiles=WUAPP32.Files, RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0834.NT.HW]
+
+[PID0834.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0834, RecordDevice.AddReg.NT
+CopyFiles=WUAPP32.Files, RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0834.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0834]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0834.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0834.DeviceDesc%
+
+[PCM2USB.PID0834.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0834.Interface,
+
+[PID0834.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0834.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0834.Interface,
+
+[PCM2USB.PID0834.Interface]
+AddReg=PCM2USB.PID0834.Int.Addreg
+
+[PCM2USB.PID0834.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0834.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0834.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0834.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0834.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0834.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0836]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0836.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0836.Interface,
+
+[PCM2USB.PID0836.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0836, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0836.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0836.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=FTRep.AddReg,PCM2USB.AddReg, RecordDevice.AddReg.PID0836, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0836.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0836]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0836.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0836.DeviceDesc%
+
+[PCM2USB.PID0836.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0836.Interface,
+
+[PID0836.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0836.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0836.Interface,
+
+[PCM2USB.PID0836.Interface]
+AddReg=PCM2USB.PID0836.Int.Addreg
+
+[PCM2USB.PID0836.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0836.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0836.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0836.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0836.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0836.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[RightSoundFilter.NT]
+HKR,,UpperFilters,0x10008,lvrs
+
+[RightSound.AddReg]
+HKR,,LVRSAudioFilterMaster,0x10001,0x1
+HKR,,LVRSAudioFilterNoManualSlaves,0x10001,0x1
+HKR,,LAECAudioFilterNoLoad,0x10001,0x1
+HKR,,LSAMAudioFilterNoLoad,0x10001,0x1
+
+[RightSound.AddReg]
+HKR,,LVRSAudioFilterMaster,0x10001,0x1
+HKR,,LVRSAudioFilterNoManualSlaves,0x10001,0x1
+HKR,,LAECAudioFilterNoLoad,0x10001,0x1
+HKR,,LSAMAudioFilterNoLoad,0x10001,0x1
+
+[PCM2USB.PID0990]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0990.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0990.Interface,
+
+[PCM2USB.PID0990.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0990, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0990.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0990.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0990, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0990.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0990]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0990.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0990.DeviceDesc%
+
+[PCM2USB.PID0990.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0990.Interface,
+
+[PID0990.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0990.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0990.Interface,
+
+[PCM2USB.PID0990.Interface]
+AddReg=PCM2USB.PID0990.Int.Addreg
+
+[PCM2USB.PID0990.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0990.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0990.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0990.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0990.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0990.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0991]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0991.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0991.Interface,
+
+[PCM2USB.PID0991.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0991, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0991.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0991.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0991, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0991.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0991]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0991.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0991.DeviceDesc%
+
+[PCM2USB.PID0991.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0991.Interface,
+
+[PID0991.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0991.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0991.Interface,
+
+[PCM2USB.PID0991.Interface]
+AddReg=PCM2USB.PID0991.Int.Addreg
+
+[PCM2USB.PID0991.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0991.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0991.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0991.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0991.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0991.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID0994]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0994.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0994.Interface,
+
+[PCM2USB.PID0994.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0994, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID0994.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID0994.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID0994, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID0994.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID0994]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_0994.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_0994.DeviceDesc%
+
+[PCM2USB.PID0994.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0994.Interface,
+
+[PID0994.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID0994.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID0994.Interface,
+
+[PCM2USB.PID0994.Interface]
+AddReg=PCM2USB.PID0994.Int.Addreg
+
+[PCM2USB.PID0994.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_0994.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID0994.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID0994.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID0994.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID0994.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.PID09A5]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.ALL, RecordDevice.AddReg, RightSound.AddReg, RightSoundSrv.AddReg
+CopyFiles=RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID09A5.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID09A5.Interface,
+
+[PCM2USB.PID09A5.NT]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio.NT
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID09A5, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PCM2USB.PID09A5.NT.HW]
+AddReg=RightSoundFilter.NT
+
+[PID09A5.VISTA]
+Include=ks.inf, wdmaudio.inf, wdma_usb.inf
+Needs=KS.Registration, WDMAUDIO.Registration.NT, USBAudio
+AddReg=PCM2USB.AddReg, RecordDevice.AddReg.PID09A5, RecordDevice.AddReg.NT,RightSound.AddReg,RightSoundSrv.AddReg
+CopyFiles=WUAPP32.Files,RightSound.CopyFile
+DriverVer=12/14/2011, 13.40.840.0
+
+[PID09A5.VISTA.HW]
+AddReg=RightSoundFilter.NT
+
+[RecordDevice.AddReg.PID09A5]
+HKCU,%MediaPrefered%,"Record",,%USB\VID_046D&PID_09A5.DeviceDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USB\VID_046D&PID_09A5.DeviceDesc%
+
+[PCM2USB.PID09A5.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID09A5.Interface,
+
+[PID09A5.VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_RENDER%,"GLOBAL",PCM2USB.PID09A5.Interface,
+AddInterface=%KSCATEGORY_CAPTURE%,"GLOBAL",PCM2USB.PID09A5.Interface,
+
+[PCM2USB.PID09A5.Interface]
+AddReg=PCM2USB.PID09A5.Int.Addreg
+
+[PCM2USB.PID09A5.Int.AddReg]
+HKR,,CurveType,1,01,00,00,00
+HKR,,FriendlyName,,%USB\VID_046D&PID_09A5.DeviceDesc%
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,LVFunctions,0x10001,0x03
+HKR,,LVFeatures,0x10001,0x00
+HKR,,LVCategories,0x10001,0x1141
+
+[PCM2USB.PID09A5.NT.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.NT.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PCM2USB.PID09A5.NT.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PID09A5.VISTA.Services]
+Include=wdma_usb.inf
+Needs=USBAudio.Services
+AddService=lvrs,0x00000000,lvrs_Service
+
+[PID09A5.VISTA.CoInstallers]
+CopyFiles=CopyCoInstaller
+AddReg=CoInstaller.AddReg
+
+[PCM2USB.AddReg]
+HKR,,OkToHibernate,3,01
+HKR,,SetupPreferredAudioDevices,3,00
+HKR,,IgnoreHWString,0x10001,0x01
+
+[RecordDevice.AddReg]
+HKLM,"Software\Logitech\QuickCam\Drivers","Audio",,%USBGenericDesc%
+HKCU,%MediaPrefered%,"PreferredOnly",1,01,00,00,00
+
+[RecordDevice.AddReg.NT]
+HKLM,"Software\Logitech\QuickCam\Drivers","Audio",,%USBGenericDesc%
+HKCU,%MediaPrefered%,"PreferredOnly",1,01,00,00,00
+HKCU,%MediaPrefered%,"SetupPreferredAudioDevicesCount",1,00,00,00,00
+
+[RecordDevice.AddReg.ALL]
+HKCU,%MediaPrefered%,"Record",,%USBGenericDesc%
+HKCU,%MediaPrefered%,"UserRecord",,%USBGenericDesc%
+
+[CopyCoInstaller]
+%lvcoinst32%,lvcoinst.dll
+lvcoinst.ini
+Repository.reg
+
+[CoInstaller.AddReg]
+HKR,,CoInstallers32,0x00010000,"%lvcoinst32%,LvCoInstaller"
+
+[RightSoundSrv.AddReg]
+HKLM,System\CurrentControlSet\Services\LVRS,WDMMode,0x10001,0x1
+
+[RightSound.CopyFile]
+lvrs.sys
+
+[lvrs_Service]
+DisplayName=%lvrs.SrvDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\lvrs.sys
+
+[FTRep.AddReg]
+HKLM,System\CurrentControlSet\Control\Logitech\FTERep,Repository0045,0x1,87,c7,f5,93,b2,87,b7,4f,b6,85,7f,84,d5,a9,  \
+       bd,42,21,60,23,1a,f7,07,b5,8e,3b,3f,f2,16,d3,90,48,b4,20,e4,5b,de,de,59,cc,ed,ab,0a,65,72,f8,47,07,a7,e9,4e,  \
+       b8,b9,6b,a5,07,75,e2,5a,15,bf,61,7a,70,5d,8f,2b,85,12,6f,5e,88,0d,51,c6,0a,db,23,0b,8b,93,15,1b,03,e9,fe,32,  \
+       48,34,5c,a3,19,02,67,9e,d5,10,7d,12,55,82,17,c9,f3,7d,64,a6,e6,48,4c,a9,2b,36,ab,6e,a2,d2,3b,3a,b9,a0,f5,4b,  \
+       a6,ac,29,8b,7b,ea,b5,6b,6f,bf,b9,0f,06,e7,bd,7a,19,f7,d1,56,c6,6d,7d,b1,aa,75,8c,fb,46,dc,ba,43,bf,a1,7a,72,  \
+       2b,2b,d9,44,1a,29,a9,75,3b,89,ae,d4,eb,0e,0f,c0,c1,d5,58,9f,3a,c3,a1,97,c6,05,d8,49,23,f0,d1,75,36,04,f9,5e,  \
+       68,59,0e,a6,66,cd,d8,62,cb,2b,c1,9d,7c,dd,85,59,26,8c,16,48,2d,03,1f,ac,10,1a,5f,15,a0,7a,b7,4d,2b,b7,3d,a9,  \
+       97,ff,9a,08,59,d0,eb,10,6d,e4,f0,95,4c,e7,e6,ad,b9,67,da,de,a9,a1,72,89,87,09,eb,82,39,0a,aa,18,2a,26,1c,69,  \
+       d3,f5,bc,cb,68,14,52,61,1e,3b,31,60,39,21,0b,d0,82,10,ea,de,92,d0,71,7e,3c,4b,5b,85,9e,d3,d6,28,10,cd,5b,d5,  \
+       3c,fe,c3,57,f6,4d,c7,fb,a2,63,d2,18,84,19,11,4a,b1,1d,df,d9,40,d7,74,2e,03,e0,c2,e2,78,85,da,fd,68,a8,f6,86,  \
+       97,04,8d,e2,40,83,44,55,f5,01,8c,80,a5,f5,13,e9,15,83,85,8e,dd,cd,ab,f3,7f,d1,bb,c5,57,59,68,5b,55,55,82,84,  \
+       a5,8d,2d,1e,47,0e,d0,21,ff,f1,23,0a,15,80,2e,c7,45,55,47,c8,3f,af,8e,d3,38,a7,9c,61,4d,e4,fb,7c,ca,51,e9,aa,  \
+       0a,08,3d,61,d6,f1,74,bb,48,da,91,03,2c,06,38,5d,01,93,0c,03,af,08,08,dd,0b,62,5d,81,fa,b8,a5,57,52,e7,0d,fe,  \
+       61,f4,9c,00,36,a0,0b,a7,d9,13,19,db,a3,ad,05,42,6a,4f,82,70,70,e5,2b,80,b1,fc,b9,25,2f,a9,64,23,e9,e3,31,30,  \
+       02,b0,56,5a,31,78,14,c7,ff,dc,c1,83,2c,5b,91,74,9c,4b,2a,90,46,03,06,76,e4,f4,30,81,dc,b9,86,17,a8,49,96,74,  \
+       13,8e,44,9f,f2,9b,99,17,84,f6,1f,38,f3,0c,4c,3f,31,83,ae,53,66,f7,43,38,4e,26,8b,c3,bc,07,26,ec,08,c5,77,a4,  \
+       53,d6,6a,89,53,fe,f1,5f,e1,13,f7,b7,a5,c4,ff,f2,85,d0,80,8d,b9,e1,ec,bc,e8,4e,d4,ec,31,62,26,00,b7,67,c5,f3,  \
+       c4,88,29,e0,cd,a8,db,fd,54,61,61,28,f3,c2,15,75,5d,5f,a8,e2,60,2b,3b,c6,ce,d1,02,a1,fd,09,55,1d,b2,ac,74,10,  \
+       8c,60,99,90,3d,83,11,d4,78,cb,65,4e,f3,61,26,3c,7d,76,50,50,81,62,16,21,a0,d4,99,2a,f3,7a,e8,2f,e6,a2,18,6d,  \
+       c9,bb,52,c4,b5,32,c7,2b,6e,b6,c2,48,97,c5,08,e5,b5,40,bd,47,6e,a1,d2,3d,66,6b,7f,0d,a8,72,da,26,ac,fd,78,2f,  \
+       5d,ae,2d,69,45,e3,77,b5,0b,67,31,96,dc,f9,b1,4c,56,12,04,9f,7b,f8,c4,0f,20,90,b5,ff,60,68,dd,5d,fd,65,f9,25,  \
+       35,ad,bc,92,01,10,b0,8c,74,2a,b0,fd,e2,ce,eb,1f,40,4b,f6,46,3b,44,72,5f,a1,e3,88,33,bb,d1,89,af,83,83,3b,45,  \
+       be,d4,0a,1f,0a,8d,ad,c1,e4,36,bb,af,16,55,2c,0a,80,29,8c,c0,43,c9,e4,3d,77,20,77,e6,80,63,cc,62,66,60,25,3b,  \
+       02,ac,97,82,4d,7e,17,52,b1,1b,86,af,e1,f5,9e,3e,d8,26,46,d3,ff,b4,24,7f,5c,93,95,57,de,43,e6,0c,a4,b5,cc,34,  \
+       45,db,bd,35,45,80,52,97,5c,1c,fc,5c,12,26,de,c7,53,e1,4c,c9,21,13,38,bc,2d,46,34,a3,f1,c0,be,d8,65,f6,63,ac,  \
+       3a,1d,61,d0,b6,7f,d6,9e,d8,ce,dd,33,9e,06,4e,a8,34,9f,14,b7,07,9f,6d,24,ac,b2,1b,1a,e8,49,c1,df,c2,29,94,57,  \
+       3b,5f,95,a4,0d,67,61,b0,8d,3b,6f,34,d4,22,6e,97,00,59,4a,b1,17,a3,eb,37,2d,ff,7b,a8,07,0e,53,e6,65,11,6d,c7,  \
+       99,ce,50,e2,7b,a6,67,d6,0c,2a,a9,a7,d9,23,af,58,6d,6c,f3,ec,7a,cd,59,b9,af,90,68,bc,d8,eb,1c,8b,06,0f,8f,36,  \
+       02,aa,7a,25,1e,46,f1,cc,7d,55,6b,d8,a7,e3,cc,e9,c2,4f,82,40,bb,60,1c,29,94,71,bf,3b,1d,ef,d0,12,13,28,42,1c,  \
+       ff,cd,b4,81,24,7f,38,3a,94,5b,30,90,ac,3a,d4,96,05,7d,e2,97,7d,a3,9a,4f,30,cf,3f,5d,c2,cf,2f,7d,d7,dd,7f,62,  \
+       19,36,44,51,08,26,c8,6b,ac,25,c4,57,17,f4,fd,46,e9,3a,c0,2a,c3,3b,3f,7f,8f,b5,14,c7,ca,5e,92,db,45,46,78,12,  \
+       cc,27,07,fd,a9,6b,69,34,db,0d,df,93,65,f7,b9,7a,9f,0b,d9,70,0b,c6,33,58,f8,3a,87,98,7c,a9,1a,b2,0b,bf,df,22,  \
+       9c,76,f0,cb,84,5f,fd,e7,1c,d9,2d,81,4e,f9,46,df,2f,24,9d,89,d0,8c,15,c2,e3,e4,66,3a,dd,e9,f9,95,78,de,ed,cb,  \
+       9c,d2,c8,f3,6e,43,d0,5b,e0,d7,f7,0e,78,9b,79,4c,85,12,64,fa,ce,5d,00,c2,c4,2d,08,3d,3b,2a,50,74,00,7e,4c,7b,  \
+       1d,29,bb,ef,9c,90,b2,df,70,ba,62,75,ff,67,1e,f1,68,59,e7,73,b7,f9,b0,47,01,9b,2a,71,c3,76,2c,58,7e,05,3a,2b,  \
+       a9,ee,96,28,4c,3c,91,f6,54,1a,0a,cc,8d,c9,86,fd,55,e5,95,c5,9e,92,8a,dd,a7,45,ce,84,7a,62,e8,db,39,e7,3c,fa,  \
+       db,e3,69,86,0a,49,53,b0,10,d9,2c,c1,73,96,68,96,51,99,34,cb,af,a4,77,f3,b2,02,99,0a,c7,8e,7e,43,03,ca,86,50,  \
+       26,50,b6,d7,c3,f7,18,77,46,38,7a,50,ca,9d,05,0f,49,9c,49,c3,79,b0,6a,de,01,d7,16,39,6a,69,2f,e7,db,d4,28,95,  \
+       08,3d,23,79,df,d7,35,a7,2d,81,95,78,4f,c4,f2,dc,af,a0,34,6d,b9,18,bd,ef,0e,55,87,57,09,4b,e1,33,a6,da,d7,be,  \
+       8b,28,d2,85,ec,50,2a,8a,a9,e3,b8,1e,0a,89,80,4c,78,1b,36,89,23,8d,e9,6b,63,af,92,54,2a,89,f6,b0,f4,7a,5e,b1,  \
+       6e,78,47,1d,c2,0d,6d,41,48,a7,5e,f1,a1,58,d6,e5,a6,f3,19,59,df,bd,9d,32,af,b9,9a,46,e6,12,fd,a7,b6,3b,47,b7,  \
+       fe,e1,f4,60,56,42,7d,a5,25,52,8f,6c,11,30,93,67,42,cc,e4,86,6f,ec,32,ae,4f,ea,99,45,3d,e4,5b,05,21,3a,bd,ee,  \
+       f9,cf,d3,0c,2f,fb,35,39,17,83,49,83,01,6a,99,43,b3,04,6f,13,55,c5,f0,cd,0c,7c,e2,9f,09,d6,3f,bb,61,ff,37,ca,  \
+       32,b8,52,e4,fd,c4,ef,e5,90,8b,65,cf,07,da,c5,1b,1a,2e,f5,17,e4,77,0e,45,c5,40,b5,17,b8,9b,3c,eb,df,30,86,01,  \
+       21,90,a3,a1,72,51,12,0a,d4,62,61,24,ee,0f,06,02,f8,bd,17,da,1d,39,35,28,86,aa,6d,1b,dc,63,07,54,17,e3,d1,38,  \
+       57,3d,ac,e9,d5,f6,c9,74,66,ca,76,a0,fa,10,88,cf,20,92,eb,8a,c7,ce,ba,60,3f,32,2f,0d,9d,67,67,c6,cf,40,da,94,  \
+       b8,f6,f3,15,0f,00,23,1a,cb,54,4a,9d,b2,18,31,fd,21,41,97,86,c7,77,6b,d6,b4,10,f0,47,ca,f1,01,70,7d,3d,4b,27,  \
+       c9,04,bd,fb,25,17,f4,34,1d,3c,a1,70,3a,ba,50,25,5f,1f,85,6f,79,99,1d,4e,66,8d,9f,b0,b8,d0,af,09,ab,6e,67,4e,  \
+       62,8b,39,b6,c5,ac,84,52,f9,09,7d,4e,ae,cf,a1,ba,81,ad,8e,06,0c,fe,1e,dd,e7,79,3b,3a,9f,6e,06,16,e5,b9,3f,92,  \
+       f1,a7,f2,79,43,50,41,b0,72,3c,3f,d2,b3,6d,ad,25,9d,cc,74,ce,b9,fd,1a,45,29,38,d2,b0,f6,8c,1f,d4,45,58,06,5f,  \
+       98,b5,41,79,68,83,4a,bc,a3,e8,9c,70,ce,8b,8a,9f,13,91,0a,7d,e8,47,59,a5,ee,56,f2,08,7d,31,0e,d6,a2,cb,93,63,  \
+       6e,28,17,0a,9c,b1,ea,a6,04,05,1d,59,cb,db,b4,69,05,ed,76,a8,d2,70,46,2b,0a,cd,29,2b,82,49,38,55,85,3d,d5,44,  \
+       37,9d,88,aa,fe,72,03,a7,96,23,85,e6,a4,58,ee,83,8e,1b,95,9a,8b,88,90,57,5e,f5,8e,7b,aa,25,ac,8f,00,92,62,2b,  \
+       f2,76,da,ca,d3,8f,6a,ab,f9,8b,1e,fd,e3,61,25,80,88,c1,e0,59,40,c4,78,07,3c,0d,b6,82,7c,56,a0,07,31,92,3d,67,  \
+       6a,12,e9,c0,f1,8b,2d,b1,f1,bf,d5,47,69,f1,81,de,0a,3a,2d,57,2d,00,0c,3a,e7,11,b7,a1,f0,76,a8,06,7e,7f,36,73,  \
+       63,a7,a4,80,b8,cd,5d,60,9a,0d,51,33,41,51,33,2b,27,ce,35,b6,0e,24,36,32,90,b9,52,b0,a1,b7,4d,8c,70,62,79,ef,  \
+       f0,e1,9b,96,d3,85,34,7e,df,df,70,d6,9f,6a,df,59,04,09,ab,d4,bc,b3,b5,60,02,b7,77,b4,e5,29,c6,32,26,d4,c2,3b,  \
+       75,61,c2,72,3d,90,89,28,a7,cf,6c,95,f8,01,42,58,e1,3e,e8,d7,a3,9e,9d,15,8f,13,08,73,47,77,fb,80,27,23,02,08,  \
+       4d,df,70,10,d1,b5,c6,3d,45,f2,f1,95,cd,5e,0a,3d,f9,b6,99,8a,0a,6b,79,e1,10,ce,bd,ec,cf,00,17,06,87,34,54,65,  \
+       7e,15,f3,d1,32,f0,3c,d2,fa,42,02,a1,d5,39,de,e9,bd,bf,ee,55,6c,5a,24,79,5c,cd,6c,04,dc,38,da,ad,40,86,6e,56,  \
+       af,b0,89,71,29,49,7f,c4,cf,8f,d0,1b,3a,d6,fb,3a,b3,a6,64,9c,6b,91,d6,e2,18,c3,b3,70,51,0a,03,85,54,eb,ca,1e,  \
+       e5,23,c9,93,41,06,7e,d5,b7,85,ce,a4,3b,d7,f2,82,ef,1f,fe,38,60,64,d9,e5,05,47,bd,1f,b5,50,23,7a,e3,b3,ea,0a,  \
+       6e,98,a3,d8,e9,95,d0,eb,98,96,e6,4a,f7,2c,6e,97,2e,c4,7e,84,9b,90,45,ed,5e,7a,98,0f,7e,c4,9b,58,cb,e7,1c,ec,  \
+       24,7b,91,33,da,72,df,7d,8c,bf,86,b4,67,f6,dd,31,e8,77,31,4f,67,49,36,ac,9a,06,17,0b,32,b0,b8,67,bb,52,ce,05,  \
+       8b,f9,5e,7a,d6,c2,c6,fa,59,f6,db,b6,fe,f7,80,de,cd,65,12,ca,90,53,16,29,60,4c,7e,b6,66,69,08,b8,80,5b,d3,11,  \
+       11,28,20,5a,e7,7f,8b,4f,7d,24,07,35,ad,68,2e,db,cc,e0,60,44,66,1d,a3,c7,b5,7e,57,23,01,df,df,99,44,3a,45,1f,  \
+       0a,4a,2b,ae,ac,d3,09,17,b6,6f,e3,90,56,54,7a,68,0f,fc,c1,57,8d,d6,6a,f9,71,04,92,69,cf,b0,88,76,85,e1,c1,6f,  \
+       3c,ba,72,4e,ca,2c,a0,32,4d,ff,de,f6,bd,e6,30,db,37,a7,99,b5,b7,5b,14,d5,48,a7,77,e7,77,24,de,38,f3,46,4e,8c,  \
+       77,36,19,58,19,14,ac,4e,c5,66,fc,9f,c1,1f,e5,b6,06,55,2f,ce,81,85,8b,5a,29,61,9e,13,71,c8,a5,a6,30,b2,f8,61,  \
+       ed,86,40,14,59,10,41,e3,a2,33,ad,95,b1,71,18,cb,29,a5,be,0c,3a,4a,b6,5b,64,7b,e1,09,fc,a0,81,2e,38,46,b0,75,  \
+       0c,49,e1,f1,eb,b5,b9,52,fd,32,eb,88,07,db,16,89,d4,fd,41,ea,07,1d,1a,e7,1f,70,3a,a9,6c,ac,1a,aa,64,8a,bf,bb,  \
+       62,1e,0a,7c,87,ea,59,9e,c1,5b,76,51,ad,fa,65,96,49,14,5e,0b,b1,cc,e5,09,6e,45,e4,36,59,6f,33,87,69,81,37,5e,  \
+       ff,93,62,ca,29,b4,bd,62,38,c3,d0,3b,33,28,0f,c8,3d,1f,b1,2c,12,f8,92,7c,e1,15,14,6c,ad,0d,3a,64,95,41,d2,0b,  \
+       5f,92,6c,65,ad,b5,1d,99,ec,56,0e,20,38,e9,f3,1f,dc,51,67,d2,87,d5,21,dc,57,52,83,42,95,f9,e5,7d,e9,84,4d,a8,  \
+       08,a7,ef,8f,01,d8,1e,c7,8b,aa,fe,ea,68,8c,28,e2,88,1d,89,fa,9d,e9,c2,07,24,1a,f6,80,08,16,01,a0,5c,b6,ac,b8,  \
+       64,4c,d5,0c,8c,96,37,1c,96,03,fa,6b,43,41,7b,ac,31,8a,1f,bb,cf,2b,b7,31,ad,63,af,8b,c4,8b,42,88,30,80,d1,ef,  \
+       46,24,ab,d0,23,ac,38,f9,23,c2,a3,3b,26,e3,ab,3e,71,9d,62,0e,34,41,04,bf,d4,f8,4e,a8,0f,77,28,26,8f,df,88,f1,  \
+       8a,cc,6b,94,ee,fc,58,a6,c9,35,91,e0,da,bd,e1,ac,06,c4,79,58,b6,4a,ab,e2,f5,bb,81,87,fc,19,95,b9,70,ab,8d,7f,  \
+       0e,7a,0e,ea,5c,41,87,99,c7,13,e8,bf,fd,d1,3b,40,59,7a,6a,31,77,33,c8,22,41,87,b3,d6,e2,71,9d,77,05,c3,47,25,  \
+       f7,17,e6,47,a4,95,08,db,ba,6d,37,21,81,64,92,30,ee,05,23,fa,fa,72,fe,e8,ca,1e,20,45,3e,44,d4,7c,8b,6b,ff,01,  \
+       d5,7b,28,cb,ba,4d,56,03,4d,c8,94,8d,f7,fe,1e,df,e1,86,9c,80,ae,3f,92,35,f7,be,a5,40,22,ac,6a,0c,8e,23,53,f1,  \
+       1b,82,76,38,5f,20,40,75,2e,06,d6,53,b7,1e,5e,dc,fe,d0,75,cb,84,9c,01,91,03,37,03,50,63,68,4b,31,e2,fd,21,cb,  \
+       bb,d5,73,db,7e,f0,da,72,df,fe,23,55,8b,48,91,f7,2f,92,43,9a,cf,b8,12,b8,a8,27,63,d6,98,72,7a,c2,6b,27,79,30,  \
+       50,1d,24,fb,17,0d,89,31,00,f9,c2,9f,02,88,f9,a1,db,91,32,ee,55,7c,49,a6,96,a8,30,c9,61,8b,44,cb,3e,44,20,19,  \
+       f0,77,35,02,49,fc,03,1d,22,1a,48,5e,a5,7a,f2,d8,b7,84,3d,40,94,49,5e,c0,83,ab,8f,00,a6,11,9d,91,85,fc,87,6d,  \
+       69,2d,7b,7f,5b,a3,48,f5,cf,08,28,92,21,72,07,a8,03,d3,7a,7f,c9,88,93,2f,4f,4f,30,8d,ce,74,83,c4,b7,ae,8e,f0,  \
+       7c,15,81,0b,37,85,d1,c6,5d,7a,b5,c2,1b,b6,10,28,3f,86,3f,89,a6,b6,cc,a8,99,81,b1,46,e0,26,b5,02,5b,66,31,14,  \
+       20,e9,12,bf,e7,72,dd,99,4e,ee,bf,58,72,6f,41,fc,da,0f,8d,80,84,34,ac,7a,89,ae,f7,48,6e,cd,b2,fb,96,8b,4e,f6,  \
+       08,fb,e4,64,72,a8,be,55,43,bc,96,16,48,21,94,76,da,1e,75,ce,2e,f7,79,46,1e,e3,e3,79,68,d8,18,74,ea,a1,49,6b,  \
+       f8,0d,17,60,d7,81,2d,e0,b2,94,7d,73,9f,12,4e,09,21,30,2f,14,f8,c4,0d,a1,17,96,9e,43,fd,c6,1e,c9,80,a3,5b,8c,  \
+       df,2c,4c,4d,d2,af,9a,d3,62,86,ff,85,93,58,bc,1a,7c,b4,26,07,a1,c8,e4,19,59,d1,f3,74,42,c5,c7,5b,9e,90,24,f0,  \
+       42,87,58,f0,7e,fe,01,e9,3c,c6,84,bf,07,01,ad,00,96,26,f8,ec,a9,dc,64,bc,2e,60,fc,18,b6,3c,6a,57,f5,fa,86,30,  \
+       a4,7a,8d,b5,68,85,cf,d2,bb,9f,52,11,4b,ef,36,fe,9f,93,7c,f7,b1,55,65,f4,be,89,b8,32,1d,85,e2,2b,2a,13,f3,97,  \
+       a0,dd,52,43,99,b9,e2,d6,97,5d,e6,df,44,05,d8,d2,34,c8,95,16,5a,7f,85,f7,9c,b8,a0,05,25,15,cf,30,bb,2d,4c,e5,  \
+       67,0a,fe,be,ba,9a,3d,d2,b7,9e,c0,1f,c8,2e,7c,55,9c,c8,77,02,68,af,41,f5,00,47,6e,6c,33,34,bc,9f,82,8d,90,66,  \
+       8a,3c,7b,18,ee,2b,49,a0,3d,65,ae,7a,6d,bf,1e,d2,b6,e2,ce,62,76,9c,42,ee,c0,c6,6a,49,ac,e3,ce,9a,bd,c4,52,5c,  \
+       ff,4f,0d,02,6a,6b,5c,1f,e9,78,42,ff,23,ba,1b,71,3e,cd,bf,ca,a4,86,a6,d7,7f,46,e1,69,0d,cd,a1,26,e5,ba,82,2c,  \
+       3f,17,41,ce,b8,08,4a,c5,d2,6c,f3,61,32,92,53,ad,e1,f3,f4,54,22,a0,07,42,e9,fa,53,55,71,92,e0,b1,09,f6,f8,c1,  \
+       87,b1,38,42,b0,9b,82,60,4f,eb,f4,be,81,59,95,7b,3d,88,2d,27,40,d6,16,1a,5e,a2,81,44,88,98,4f,4a,a3,bb,17,f1,  \
+       5c,95,18,d6,f6,1a,87,f4,fd,bd,7c,85,02,cc,ac,cf,e9,b0,07,1f,8e,53,a6,31,ed,15,62,33,8b,83,34,52,8e,3e,01,7a,  \
+       e3,e5,10,19,fd,95,19,b7,00,2e,4d,34,fb,58,8f,12,be,15,9a,8b,bc,db,38,9d,2d,17,59,87,56,07,52,03,9b,85,bb,b3,  \
+       c6,9a,b1,10,20,37,af,bc,a0,3d,1c,1a,17,1c,24,ce,aa,2c,04,a6,6a,53,7d,e7,ba,8b,ef,d2,6c,e8,99,c1,4f,dd,bd,bd,  \
+       b8,4b,15,fa,90,cf,5e,13,93,8e,d3,4b,8f,a6,3f,38,c8,23,98,3f,d7,ce,d1,ce,a4,c1,98,9e,ce,22,14,1e,35,cb,96,2a,  \
+       17,72,05,9e,51,fd,56,7e,e2,8d,8a,75,65,55,38,dd,78,84,7c,72,49,0b,0a,e0,67,c6,3a,b3,82,6a,24,bb,60,d9,56,33,  \
+       d3,61,fb,15,ca,9a,c9,a4,7b,d5,6b,25,ff,37,fd,86,a2,b3,72,0e,e5,26,6e,10,c2,d7,68,87,38,b6,a9,75,25,2d,a7,a1,  \
+       fa,11,f0,08,77,f4,ac,a9,74,16,e1,30,20,27,7a,4d,da,d2,7f,f0,48,2c,08,2c,26,c0,87,5c,e6,d1,c3,ee,61,b8,c5,cd,  \
+       2e,2c,21,f5,82,38,b8,a2,68,e5,1b,5a,00,da,21,0c,ad,7d,cd,40,31,4e,f9,dd,b2,c7,fd,02,80,7a,4e,7e,59,77,0d,18,  \
+       1e,53,9a,94,f7,22,b9,2a,f5,9f,7a,55,08,ee,cc,44,15,2e,0d,02,74,7a,94,56,89,89,98,ff,38,0b,18,64,4e,ce,dc,fa,  \
+       02,59,f9,5c,e2,2f,cf,38,7b,72,30,cb,b1,1b,60,b6,f6,5f,c3,68,7a,23,69,32,a9,5d,5a,49,af,e0,0f,db,8a,bd,34,64,  \
+       1a,8a,68,55,c8,f6,27,ec,01,f4,58,12,89,b3,fc,61,35,66,8b,17,1c,0b,2b,2f,d9,a7,77,99,1e,3f,f2,e8,fa,05,b4,01,  \
+       02,fb,05,f2,63,a9,b5,e8,f0,c3,ab,8a,f0,0b,1b,2d,fe,e1,7a,2f,e0,da,34,1e,77,3c,40,71,00,e5,76,af,e4,46,72,d0,  \
+       1d,fa,a4,62,18,cc,90,ee,4c,c0,61,8b,7a,1c,21,0d,62,88,21,fb,6e,5b,80,dc,6e,7a,9a,ac,1e,67,0d,2a,3f,53,58,f8,  \
+       91,d8,82,43,1c,df,eb,79,8a,9f,1d,6d,35,f0,a0,4d,50,07,f3,98,aa,2b,2b,13,e2,1a,0a,a9,fa,72,36,02,68,80,48,05,  \
+       d3,bf,5f,8a,9b,d1,75,16,ee,bf,c7,07,bb,8a,33,2f,6b,18,40,d8,51,cd,75,68,7b,f2,92,5d,a0,10,b2,81,c3,a2,1f,a5,  \
+       1c,7e,3d,d9,db,92,15,42,4d,11,88,54,04,18,b4,dc,a7,6c,85,d1,02,5c,2d,20,ea,8d,74,4c,64,d3,57,de,4a,8c,24,9b,  \
+       04,05,49,7f,e6,e2,32,dd,53,2c,5c,f5,77,f3,80,c2,0c,3e,6b,72,d3,4e,95,d7,01,12,28,ec,46,c8,32,81,da,8c,4c,ee,  \
+       d6,d5,79,9b,63,b6,2e,05,42,78,d7,8a,6f,d0,b7,86,a9,af,17,44,12,45,9f,1b,0d,da,2d,69,99,51,3a,3b,a4,a1,c9,a9,  \
+       9a,22,64,7c,bc,b1,44,23,df,ef,c6,f0,92,8c,d1,df,6b,61,12,81,d2,a5,ec,2f,32,8e,da,63,9b,a8,9a,b8,74,35,da,46,  \
+       71,4c,94,89,90,41,e3,91,0e,76,82,19,a4,a1,39,1f,4e,70,f7,6f,a7,ba,2b,b8,4d,ce,a8,79,cb,db,18,7f,01,6a,d3,51,  \
+       90,10,75,74,dc,ec,d0,f5,22,a8,1c,8a,86,8c,a7,cd,46,9f,a6,6e,48,5c,ef,ad,0b,1c,a7,14,6e,a5,35,7d,8b,11,44,40,  \
+       aa,dc,fb,f5,22,77,a6,1e,bd,81,cf,07,77,6e,f7,76,38,22,b5,28,9e,ba,ac,de,4e,4b,18,23,86,6b,ca,78,05,00,25,cf,  \
+       25,2a,da,28,e2,82,bb,61,35,d4,c4,de,03,65,53,30,f8,56,5d,a7,db,ce,1f,7b,01,c9,5b,ec,6d,a8,88,a0,f7,7b,8b,77,  \
+       fa,9d,81,5e,19,ed,ba,e3,6b,6f,f8,4c,d9,88,3d,ac,53,78,fc,b1,c8,12,91,c8,5d,df,d1,aa,33,68,66,40,7f,33,cf,14,  \
+       ba,23,b3,73,57,31,82,ab,a2,55,d5,3d,ab,d2,37,d7,1c,0f,66,f1,d5,a9,63,0d,22,49,05,0f,9b,a1,8c,d0,1e,92,84,fe,  \
+       8c,67,95,a5,28,ab,53,98,03,23,53,55,0c,08,79,be,3c,58,e9,14,e6,56,bb,b0,d1,c0,6b,61,54,4e,63,7c,c6,44,61,f7,  \
+       86,66,d7,d4,f4,99,d9,59,dc,9c,0a,63,5c,6d,0f,cc,2a,a9,69,ba,51,a6,d6,f5,08,ec,51,64,81,dd,0c,26,52,4f,36,4c,  \
+       f0,2b,3d,55,0e,fa,35,e9,9d,b9,85,85,d0,9c,2c,17,86,3a,18,e8,ec,09,d3,3a,2a,a7,7b,25,72,63,42,68,ed,bd,f8,ce,  \
+       fd,41,41,7e,94,22,45,64,92,de,4a,ef,08,03,f7,16,16,6b,eb,31,6a,89,f2,76,59,a2,6c,56,a1,a6,58,93,7e,be,de,76,  \
+       bc,b8,d2,7b,d5,f3,bc,15,47,ba,ec,7f,c0,99,49,6d,42,a3,85,90,1e,94,1d,90,0e,59,85,24,20,38,3f,92,ff,d5,4f,72,  \
+       c3,7b,f7,32,97,24,9d,7a,e6,1c,79,4a,30,4d,b4,c7,a7,e5,c8,72,d4,e5,d5,dc,4a,65,2d,ea,f4,93,0d,7a,9e,cb,22,f1,  \
+       bf,91,b2,f8,ab,f6,0a,79,51,f3,d5,2a,9b,fe,e9,c9,d3,f9,d3,d3,db,51,78,14,31,09,d4,74,98,0e,54,98,58,bc,68,c3,  \
+       d8,e4,94,39,73,31,a6,1b,82,3b,ef,a3,b5,5c,6e,13,0d,14,6a,e9,8a,df,44,52,b2,1a,27,fe,b3,c8,b1,a2,1b,6f,b0,79,  \
+       c2,50,2d,5f,10,3f,66,68,58,be,e5,78,7d,9a,58,42,2c,a0,b9,5b,cb,bc,40,2b,30,fd,26,9d,c6,ee,fb,ee,73,c4,57,0b,  \
+       01,01,62,8e,30,2f,17,09,0c,ea,33,5d,24,69,e5,0a,84,59,49,fc,ca,d3,9e,08,4c,29,c9,8b,44,9b,c5,63,c2,b7,29,80,  \
+       d9,8b,9c,34,68,90,85,5b,d4,25,a8,15,11,32,6e,fd,f3,7a,b5,b0,09,79,38,a3,9b,c7,99,49,e7,31,bb,80,52,05,ab,ca,  \
+       89,e1,fe,02,22,ca,05,1d,90,35,9f,8a,aa,3e,99,e1,93,49,03,07,3d,0b,e8,3d,12,8b,c9,15,a0,67,21,33,b9,6f,e2,16,  \
+       aa,a7,fe,fc,b7,30,3c,61,33,3a,3c,ae,1e,71,f0,15,19,35,19,3c,98,67,b8,a3,74,71,fd,1c,4a,69,c0,ed,21,c0,c1,23,  \
+       30,e8,ef,6a,6c,97,4b,32,2b,dd,07,aa,80,5b,fd,b1,25,99,d0,da,7e,e7,02,ec,da,72,54,f5,3b,f7,a8,da,a2,34,0a,6b,  \
+       2b,7e,cd,0e,17,77,58,5a,e8,d3,e2,bb,aa,cc,57,06,bd,37,b9,4a,81,0c,cd,ab,f4,2c,f9,c3,3f,18,64,88,67,00,99,b9,  \
+       e4,5a,69,18,fd,d2,51,2c,cd,09,d8,a1,5e,39,ab,e0,73,76,ad,a7,84,00,21,98,00,55,71,de,7e,b7,28,8f,be,3d,a4,c7,  \
+       94,14,8f,c9,89,27,7a,5b,f3,45,9c,74,6b,5b,c6,1d,48,ac,23,21,e6,9a,3e,11,9b,c3,99,83,d4,87,98,fc,48,fb,85,21,  \
+       10,a3,71,a7,77,30,8c,f6,31,95,8a,5e,bd,a3,ef,f8,d3,9b,a4,de,2e,5d,b6,3d,c8,8c,f3,20,a8,5c,61,92,ac,d7,44,cf,  \
+       aa,d1,b0,39,c1,b2,71,59,61,ba,f9,e8,a9,96,c9,2e,17,94,b5,7d,22,e9,27,fd,76,22,fa,50,97,b8,a3,5a,c2,be,53,e6,  \
+       48,f7,93,25,c9,98,3f,80,a0,ae,25,b0,34,a1,5d,90,d0,cf,fe,17,ae,6d,79,31,d0,62,43,e7,90,5c,a1,e3,c3,52,c3,70,  \
+       17,97,61,8b,b0,87,13,0c,73,6a,b0,76,18,38,54,57,d8,45,25,45,a5,f9,dc,89,b4,cd,c5,27,48,bc,f6,aa,d1,ed,b5,60,  \
+       fb,80,31,10,e5,95,46,d2,41,7f,93,2d,b9,51,c1,00,1f,e9,6e,f8,f6,53,53,0b,5e,16,50,a5,b3,82,a7,24,bc,b8,0c,f3,  \
+       a6,a5,ad,f1,06,59,64,94,bc,05,56,2e,6b,20,80,a1,7a,1a,c0,bf,93,93,c5,5e,3d,e4,9c,85,14,93,e8,58,04,df,84,ef,  \
+       25,df,76,e8,5e,9f,af,aa,15,38,28,b3,76,96,ef,04,72,75,f4,e9,a7,ea,ee,c2,f8,25,f0,29,ea,40,7b,e8,5f,9b,3c,e3,  \
+       16,b2,e6,48,33,66,35,a2,e2,ac,bf,bf,cd,dc,6b,1c,85,32,34,94,9e,b7,ee,db,af,6c,4f,3a,ea,be,52,8b,5f,1b,ff,0b,  \
+       ad,ec,3c,11,26,56,ce,06,cc,77,d5,18,9a,f1,3b,dc,05,7d,f5,be,af,17,67,c9,34,5c,ec,79,18,f0,f0,4b,5e,a7,86,4c,  \
+       40,5b,f5,c0,e5,52,b3,1f,ad,75,59,06,f5,a1,57,35,30,b3,0d,7e,64,85,3f,ef,97,7c,53,ab,22,f4,f6,a9,fe,5d,12,d5,  \
+       ff,60,0c,26,f5,0d,40,56,ed,cc,11,80,cd,88,bd,75,a9,0a,89,05,37,16,79,0f,1f,e8,f4,64,ff,98,79,61,38,55,40,57,  \
+       c8,d8,ae,bf,b1,06,5a,dd,ea,0c,8d,d0,4a,7d,df,38,90,a5,e2,86,75,97,d6,35,4c,2e,c2,d1,19,4d,80,e2,e3,37,0a,0f,  \
+       85,0f,be,57,45,09,f8,d2,64,75,ab,a2,9a,f2,8b,f4,c8,22,91,f6,89,ea,5f,e1,a9,bd,40,c9,bc,49,5e,73,87,98,d0,5e,  \
+       e2,7c,5a,16,2e,c2,5a,9c,b4,a8,28,2d,91,33,2c,f0,14,40,52,64,40,69,d9,94,7e,10,7c,74,70,45,17,0e,9d,5a,ce,5e,  \
+       c5,52,7f,05,6f,05,10,68,72,49,c8,a9,09,a6,25,34,e6,48,04,00,ad,de,b1,94,9f,f4,42,4a,ab,93,da,79,fc,c9,93,a7,  \
+       e4,7d,47,a0,97,ac,a8,08,84,ed,60,4f,3d,1c,1d,5c,8d,ed,49,75,40,3f,4d,93,dc,77,bf,ba,ba,ab,cb,d0,62,a6,83,e2,  \
+       26,a9,8b,4d,93,6f,c1,c2,22,40,06,ab,3b,80,2e,40,b1,8b,a3,11,b3,88,e2,fa,6a,24,0e,6a,26,8c,8d,5c,d4,e5,b6,cd,  \
+       25,28,f0,3c,81,c6,2d,91,b3,bd,d3,8e,a8,ef,21,83,11,24,fe,ab,3f,f7,ef,ba,d6,d6,5c,de,d9,56,96,a4,03,1f,9e,7c,  \
+       2e,41,78,eb,f2,b1,89,0f,76,48,16,78,67,eb,f6,81,67,f8,4c,22,82,e2,f0,5e,26,02,41,c4,0b,f9,24,0e,be,f8,0c,5f,  \
+       c0,e9,ee,b4,f6,e3,7f,52,b3,a2,85,00,93,05,c9,69,95,5e,9c,29,d5,a6,22,8c,56,22,d8,e8,fc,80,55,ac,a0,31,78,9f,  \
+       9d,c5,98,10,c8,54,3f,17,15,6e,f1,65,bf,f7,f3,a9,a7,8b,b8,d2,f2,7b,9a,e9,87,85,e8,1f,a5,9e,2e,a7,f4,a7,04,86,  \
+       ce,a7,41,37,cd,c9,2d,93,bf,db,d8,b5,d8,c0,fa,8a,4c,2d,8f,4f,cb,8b,6e,9c,18,94,74,e5,fb,6e,67,dc,8d,89,da,9e,  \
+       6f,69,1a,a4,e8,20,21,88,2c,e3,75,e5,63,0f,f5,90,e6,08,a8,ce,a7,6e,f3,ea,aa,96,e7,d1,bc,65,31,a6,9a,0d,31,d9,  \
+       bf,8e,60,05,e7,17,6f,19,64,1e,34,85,c7,0a,5f,13,5c,d2,fa,97,e4,a9,17,76,e3,00,67,a4,b7,aa,1d,f2,fa,b7,0e,50,  \
+       a7,d3,5c,69,ce,45,6d,06,5f,f6,3f,3a,43,36,96,30,89,e2,b0,88,98,8e,a0,81,92,72,d2,b5,b1,95,d7,53,32,fe,01,03,  \
+       ca,e5,71,40,94,fc,aa,99,ce,ef,66,48,4d,b1,c9,30,a9,ad,d5,86,c4,c5,34,5f,1c,3c,2a,cd,92,ca,93,78,a7,62,cf,a2,  \
+       48,f8,2e,7f,ac,cc,65,01,ce,56,51,45,a2,73,fd,70,fc,38,e2,3c,fa,26,21,90,09,ba,6c,14,cd,83,84,1b,90,bc,39,f3,  \
+       fe,f4,68,27,d7,c9,17,18,78,0f,90,53,b9,ca,38,71,57,87,c6,69,3a,da,57,bb,38,d4,a9,80,22,30,3f,55,a8,80,bf,6c,  \
+       f2,4e,80,ca,9d,da,fb,e9,d3,83,8b,98,a1,c9,75,26,60,f7,00,28,c9,ea,7e,3c,f8,9d,0b,b0,cb,d7,cd,7f,37,d4,cf,eb,  \
+       32,1d,70,26,b3,2d,05,4e,19,af,63,8d,44,d6,b8,6a,87,ed,a5,3b,82,c3,62,bb,c2,09,66,79,5f,c5,c5,52,99,61,7f,34,  \
+       c9,b9,d6,39,16,b0,76,eb,4c,f3,ef,d3,44,ac,db,ec,37,f5,a6,bd,38,2e,7c,cc,b6,21,ce,0b,74,c8,ff,0e,08,04,90,5c,  \
+       52,97,a6,57,20,fb,67,2b,67,2c,2a,3f,6a,d0,e1,b2,d3,68,bb,60,b3,02,4d,52,b0,bc,d2,2d,de,e4,25,b7,fe,37,72,1c,  \
+       9f,94,76,ca,8d,b1,a6,b5,16,02,41,9c,be,a7,fa,1b,84,bf,ac,6d,cd,4a,ef,fc,83,27,f4,56,e3,66,4b,01,f2,4a,80,06,  \
+       c8,38,4c,ac,5f,80,5f,95,8c,e5,01,0b,0a,3d,6b,7c,ea,52,b9,30,ee,f7,d5,49,82,11,eb,7b,b6,19,7f,0b,b1,fe,e9,9c,  \
+       a1,10,9f,a9,04,33,62,c6,43,18,18,6e,49,00,b5,a5,8a,ec,0b,d3,34,15,d8,69,f3,2e,be,1a,5b,7f,75,ef,cf,87,54,24,  \
+       f0,00,a6,b7,38,a7,94,34,43,6f,5f,1f,d5,0d,86,35,9e,16,a3,02,1c,79,ce,e2,82,d1,39,e1,86,32,12,80,20,a2,5e,98,  \
+       0f,c8,ab,92,c9,51,e6,19,a1,d2,3c,32,c0,15,59,ba,da,6c,88,76,34,ef,a1,77,af,4c,8f,8c,a4,36,f9,3c,fe,c6,d0,13,  \
+       54,d3,ff,d3,ac,fe,71,be,0b,e6,00,ed,9d,6c,62,a9,e5,45,6e,75,e5,87,44,25,2c,d2,02,40,16,6d,4e,b6,0b,2c,59,e1,  \
+       a9,ce,e0,5c,96,70,da,be,5c,10,8e,c2,ed,71,3f,62,77,79,10,d1,fc,28,82,20,f0,2e,80
+
+[WUAPP32.Files]
+WUApp32.exe
+
+[Uninstall]
+DelFiles = RightSound.CopyFile,CopyCoInstaller,WUAPP32.Files
+DelReg   = recorddevice.addreg.pid0802,recorddevice.addreg.nt,rightsoundsrv.addreg,recorddevice.addreg.all,recorddevice.addreg,recorddevice.addreg.pid0804,recorddevice.addreg.pid0805,recorddevice.addreg.pid0807,recorddevice.addreg.pid0808,recorddevice.addreg.pid0809,\
+ recorddevice.addreg.pid080a,recorddevice.addreg.pid0819,recorddevice.addreg.pid081a,recorddevice.addreg.pid0821,recorddevice.addreg.pid081b,recorddevice.addreg.pid081d,recorddevice.addreg.pid0823,recorddevice.addreg.pid0824,recorddevice.addreg.pid0825,recorddevice.addreg.pid0826,\
+ recorddevice.addreg.pid0829,recorddevice.addreg.pid082b,recorddevice.addreg.pid082c,recorddevice.addreg.pid082d,recorddevice.addreg.pid0834,recorddevice.addreg.pid0836,recorddevice.addreg.pid09a5,recorddevice.addreg.pid0990,recorddevice.addreg.pid0991,recorddevice.addreg.pid0994
+
+[Strings]
+PVD="Logitech"
+MfgName="Logitech"
+DISK_NAME="Logitech USB Video Camera Disk"
+USBGenericDesc="Logitech Microphone"
+USB\VID_046D&PID_0802.DeviceDesc="Webcam 200"
+USB\VID_046D&PID_0804.DeviceDesc="Webcam 250"
+USB\VID_046D&PID_0805.DeviceDesc="Webcam 300"
+USB\VID_046D&PID_0807.DeviceDesc="Webcam 500"
+USB\VID_046D&PID_0808.DeviceDesc="Webcam 600"
+USB\VID_046D&PID_0809.DeviceDesc="Webcam Pro 9000"
+USB\VID_046D&PID_080A.DeviceDesc="Webcam 905"
+USB\VID_046D&PID_0819.DeviceDesc="Webcam C210"
+USB\VID_046D&PID_081A.DeviceDesc="Webcam C260"
+USB\VID_046D&PID_081B.DeviceDesc="HD Webcam C310"
+USB\VID_046D&PID_081D.DeviceDesc="HD Webcam C510"
+USB\VID_046D&PID_0821.DeviceDesc="HD Pro Webcam C910"
+USB\VID_046D&PID_0823.DeviceDesc="B910 HD Webcam"
+USB\VID_046D&PID_0824.DeviceDesc="Webcam C160"
+USB\VID_046D&PID_0825.DeviceDesc="HD Webcam C270"
+USB\VID_046D&PID_0826.DeviceDesc="HD Webcam C525"
+USB\VID_046D&PID_0829.DeviceDesc="Webcam C110"
+USB\VID_046D&PID_082B.DeviceDesc="Webcam C170"
+USB\VID_046D&PID_082C.DeviceDesc="HD Webcam C615"
+USB\VID_046D&PID_082D.DeviceDesc="HD Pro Webcam C920"
+USB\VID_046D&PID_0834.DeviceDesc="BC920 HD Pro Webcam"
+USB\VID_046D&PID_0836.DeviceDesc="B525 HD Webcam"
+USB\VID_046D&PID_0990.DeviceDesc="Pro 9000"
+USB\VID_046D&PID_0991.DeviceDesc="Pro for Notebooks"
+USB\VID_046D&PID_0994.DeviceDesc="Orbit/Sphere AF"
+USB\VID_046D&PID_09A5.DeviceDesc="QuickCam 3000"
+MediaPrefered="Software\Microsoft\Multimedia\Sound Mapper"
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994ad04-93ef-11d0-a3cc-00a0c9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+PKEY_AudioEngine_OEMFormat="{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
+PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+KSNODETYPE_MICROPHONE="{DFF21BE1-F70F-11D0-B917-00A0C9223196}"
+lvrs.SrvDesc="Logitech RightSound Filter Driver"
+lvcoinst32="lvci1340840.dll"
+
+[Strings.0411]
+PVD="Logicool"
+MfgName="Logicool"
+DISK_NAME="Logicool USB Video Camera Disk"
+USBGenericDesc="Logicool Microphone"
+USB\VID_046D&PID_0802.DeviceDesc="Webcam 200"
+USB\VID_046D&PID_0804.DeviceDesc="Webcam 250"
+USB\VID_046D&PID_0805.DeviceDesc="Webcam 300"
+USB\VID_046D&PID_0807.DeviceDesc="Webcam 500"
+USB\VID_046D&PID_0808.DeviceDesc="Webcam 600"
+USB\VID_046D&PID_0809.DeviceDesc="Webcam Pro 9000"
+USB\VID_046D&PID_080A.DeviceDesc="Webcam 905"
+USB\VID_046D&PID_0819.DeviceDesc="Webcam C210"
+USB\VID_046D&PID_081A.DeviceDesc="Webcam C260"
+USB\VID_046D&PID_081B.DeviceDesc="HD Webcam C310"
+USB\VID_046D&PID_081D.DeviceDesc="HD Webcam C510"
+USB\VID_046D&PID_0821.DeviceDesc="HD Pro Webcam C910"
+USB\VID_046D&PID_0823.DeviceDesc="B910 HD Webcam"
+USB\VID_046D&PID_0824.DeviceDesc="Webcam C160"
+USB\VID_046D&PID_0825.DeviceDesc="HD Webcam C270"
+USB\VID_046D&PID_0826.DeviceDesc="HD Webcam C525"
+USB\VID_046D&PID_0829.DeviceDesc="Webcam C110"
+USB\VID_046D&PID_082B.DeviceDesc="Webcam C170"
+USB\VID_046D&PID_082C.DeviceDesc="HD Webcam C615"
+USB\VID_046D&PID_082D.DeviceDesc="HD Pro Webcam C920"
+USB\VID_046D&PID_0834.DeviceDesc="BC920 HD Pro Webcam"
+USB\VID_046D&PID_0836.DeviceDesc="B525 HD Webcam"
+USB\VID_046D&PID_0990.DeviceDesc="Pro 9000"
+USB\VID_046D&PID_0991.DeviceDesc="Pro for Notebooks"
+USB\VID_046D&PID_0994.DeviceDesc="Orbit/Sphere AF"
+USB\VID_046D&PID_09A5.DeviceDesc="QCam 3000"
+MediaPrefered="Software\Microsoft\Multimedia\Sound Mapper"
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994ad04-93ef-11d0-a3cc-00a0c9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+PKEY_AudioEngine_OEMFormat="{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
+PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
+KSNODETYPE_MICROPHONE="{DFF21BE1-F70F-11D0-B917-00A0C9223196}"
+lvrs.SrvDesc="Logicool RightSound Filter Driver"
+lvcoinst32="lvci1340840.dll"
+
+
+

@@ -1,0 +1,190 @@
+;-------------------------------------------------------
+; File: lPRO564c.inf
+; Logitech Video2 Camera Installation file
+; Copyright (c) 1996-2011 Logitech Inc.
+;-------------------------------------------------------
+
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%PVD%
+LayoutFile=LAYOUT.INF
+CatalogFile=lPRO564c.cat
+DriverVer=12/14/2011, 13.40.840.0
+
+[DestinationDirs]
+DefaultDestDir=11
+CompFilter.CopyFiles.NTX64=10,system32\drivers
+
+[ControlFlags]
+ExcludeFromselect=*
+
+[Manufacturer]
+%LogitechMfg%=Logitech.Section,NTamd64,NTamd64.6.0
+
+[SourceDisksNames]
+1=%DISK_NAME%,,,
+
+[SourceDisksFiles]
+lvbflt64.sys=1
+
+[Logitech.Section.NTamd64]
+%USB\VID_046D&PID_0802.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0802
+%USB\VID_046D&PID_0804.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0804
+%USB\VID_046D&PID_0805.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0805
+%USB\VID_046D&PID_0807.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0807
+%USB\VID_046D&PID_0808.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0808
+%USB\VID_046D&PID_0809.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0809
+%USB\VID_046D&PID_080A.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_080a
+%USB\VID_046D&PID_080F.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_080f
+%USB\VID_046D&PID_0817.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0817
+%USB\VID_046D&PID_0819.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0819
+%USB\VID_046D&PID_081A.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_081a
+%USB\VID_046D&PID_081B.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_081b
+%USB\VID_046D&PID_081D.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_081d
+%USB\VID_046D&PID_0821.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0821
+%USB\VID_046D&PID_0823.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0823
+%USB\VID_046D&PID_0824.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0824
+%USB\VID_046D&PID_0825.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0825
+%USB\VID_046D&PID_0826.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0826
+%USB\VID_046D&PID_082C.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_082c
+%USB\VID_046D&PID_082D.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_082d
+%USB\VID_046D&PID_0834.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0834
+%USB\VID_046D&PID_0836.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0836
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0990
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0991
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0994
+%USB\VID_046D&PID_09A5.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_09a5
+
+[Logitech.Section.NTamd64.6.0]
+%USB\VID_046D&PID_0802.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0802
+%USB\VID_046D&PID_0804.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0804
+%USB\VID_046D&PID_0805.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0805
+%USB\VID_046D&PID_0807.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0807
+%USB\VID_046D&PID_0808.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0808
+%USB\VID_046D&PID_0809.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0809
+%USB\VID_046D&PID_080A.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_080a
+%USB\VID_046D&PID_080F.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_080f
+%USB\VID_046D&PID_0817.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0817
+%USB\VID_046D&PID_0819.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0819
+%USB\VID_046D&PID_081A.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_081a
+%USB\VID_046D&PID_081B.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_081b
+%USB\VID_046D&PID_081D.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_081d
+%USB\VID_046D&PID_0821.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0821
+%USB\VID_046D&PID_0823.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0823
+%USB\VID_046D&PID_0824.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0824
+%USB\VID_046D&PID_0825.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0825
+%USB\VID_046D&PID_0826.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0826
+%USB\VID_046D&PID_082C.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_082c
+%USB\VID_046D&PID_082D.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_082d
+%USB\VID_046D&PID_0834.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0834
+%USB\VID_046D&PID_0836.DeviceDesc%=LogiHub.Cmpflt.NTX64,usb\vid_046d&pid_0836
+%USB\VID_046D&PID_0990.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0990
+%USB\VID_046D&PID_0991.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0991
+%USB\VID_046D&PID_0994.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_0994
+%USB\VID_046D&PID_09A5.DeviceDesc%=LogiHub.Dev.NT,usb\vid_046d&pid_09a5
+
+[LogiHub.Dev.NT]
+Include=usb.inf
+Needs=Composite.Dev.NT
+
+[LogiHub.Dev.NT.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+
+[LogiHub.Cmpflt.NTX64]
+Include=usb.inf
+Needs=Composite.Dev.NT
+CopyFiles=CompFilter.CopyFiles.NTX64
+
+[LogiHub.Cmpflt.NTX64.HW]
+AddReg=CompFilter.NTX64.AddReg
+
+[CompFilter.NTX64.AddReg]
+HKR,,"LowerFilters",0x00010008,"CompFilter64"
+
+[LogiHub.Cmpflt.NTX64.Services]
+Include=usb.inf
+Needs=Composite.Dev.NT.Services
+AddService=CompFilter64,,Cmpflt64_Service_Inst
+
+[Cmpflt64_Service_Inst]
+DisplayName="UVCCompositeFilter"
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\lvbflt64.sys
+LoadOrderGroup=extendedbase
+
+[CompFilter.CopyFiles.NTX64]
+lvbflt64.sys
+
+[Uninstall]
+DelFiles = CompFilter.CopyFiles.NTX64
+
+
+[Strings]
+LogitechMfg="Logitech"
+DISK_NAME="Logitech USB Video Camera Disk"
+PVD="Logitech"
+USB\VID_046D&PID_0802.DeviceDesc="Logitech USB Camera (Webcam 200)"
+USB\VID_046D&PID_0804.DeviceDesc="Logitech USB Camera (Webcam 250)"
+USB\VID_046D&PID_0805.DeviceDesc="Logitech USB Camera (Webcam 300)"
+USB\VID_046D&PID_0807.DeviceDesc="Logitech USB Camera (Webcam 500)"
+USB\VID_046D&PID_0808.DeviceDesc="Logitech USB Camera (Webcam 600)"
+USB\VID_046D&PID_0809.DeviceDesc="Logitech USB Camera (Webcam Pro 9000)"
+USB\VID_046D&PID_080A.DeviceDesc="Logitech USB Camera (Webcam 905)"
+USB\VID_046D&PID_080F.DeviceDesc="Logitech USB Camera (Webcam 120)"
+USB\VID_046D&PID_0817.DeviceDesc="Logitech USB Camera (Webcam C100)"
+USB\VID_046D&PID_0819.DeviceDesc="Logitech USB Camera (Webcam C210)"
+USB\VID_046D&PID_081A.DeviceDesc="Logitech USB Camera (Webcam C260)"
+USB\VID_046D&PID_081B.DeviceDesc="Logitech USB Camera (HD Webcam C310)"
+USB\VID_046D&PID_081D.DeviceDesc="Logitech USB Camera (HD Webcam C510)"
+USB\VID_046D&PID_0821.DeviceDesc="Logitech USB Camera (HD Pro Webcam C910)"
+USB\VID_046D&PID_0823.DeviceDesc="Logitech USB Camera (B910 HD Webcam)"
+USB\VID_046D&PID_0824.DeviceDesc="Logitech USB Camera (Webcam C160)"
+USB\VID_046D&PID_0825.DeviceDesc="Logitech USB Camera (HD Webcam C270)"
+USB\VID_046D&PID_0826.DeviceDesc="Logitech USB Camera (HD Webcam C525)"
+USB\VID_046D&PID_082C.DeviceDesc="Logitech USB Camera (HD Webcam C615)"
+USB\VID_046D&PID_082D.DeviceDesc="Logitech USB Camera (HD Pro Webcam C920)"
+USB\VID_046D&PID_0834.DeviceDesc="Logitech USB Camera (BC920 HD Pro Webcam)"
+USB\VID_046D&PID_0836.DeviceDesc="Logitech USB Camera (B525 HD Webcam)"
+USB\VID_046D&PID_0990.DeviceDesc="Logitech USB Camera (Pro 9000)"
+USB\VID_046D&PID_0991.DeviceDesc="Logitech USB Camera (Pro for Notebooks)"
+USB\VID_046D&PID_0994.DeviceDesc="Logitech USB Camera (Orbit/Sphere AF)"
+USB\VID_046D&PID_09A5.DeviceDesc="Logitech USB Camera (QuickCam 3000)"
+
+[Strings.0411]
+LogitechMfg="Logicool"
+DISK_NAME="Logicool USB Video Camera Disk"
+PVD="Logicool"
+USB\VID_046D&PID_0802.DeviceDesc="Logicool USB Camera (Webcam 200)"
+USB\VID_046D&PID_0804.DeviceDesc="Logicool USB Camera (Webcam 250)"
+USB\VID_046D&PID_0805.DeviceDesc="Logicool USB Camera (Webcam 300)"
+USB\VID_046D&PID_0807.DeviceDesc="Logicool USB Camera (Webcam 500)"
+USB\VID_046D&PID_0808.DeviceDesc="Logicool USB Camera (Webcam 600)"
+USB\VID_046D&PID_0809.DeviceDesc="Logicool USB Camera (Webcam Pro 9000)"
+USB\VID_046D&PID_080A.DeviceDesc="Logicool USB Camera (Webcam 905)"
+USB\VID_046D&PID_080F.DeviceDesc="Logicool USB Camera (Webcam 120)"
+USB\VID_046D&PID_0817.DeviceDesc="Logicool USB Camera (Webcam C100)"
+USB\VID_046D&PID_0819.DeviceDesc="Logicool USB Camera (Webcam C210)"
+USB\VID_046D&PID_081A.DeviceDesc="Logicool USB Camera (Webcam C260)"
+USB\VID_046D&PID_081B.DeviceDesc="Logicool USB Camera (HD Webcam C310)"
+USB\VID_046D&PID_081D.DeviceDesc="Logicool USB Camera (HD Webcam C510)"
+USB\VID_046D&PID_0821.DeviceDesc="Logicool USB Camera (HD Pro Webcam C910)"
+USB\VID_046D&PID_0823.DeviceDesc="Logicool USB Camera (B910 HD Webcam)"
+USB\VID_046D&PID_0824.DeviceDesc="Logicool USB Camera (Webcam C160)"
+USB\VID_046D&PID_0825.DeviceDesc="Logicool USB Camera (HD Webcam C270)"
+USB\VID_046D&PID_0826.DeviceDesc="Logicool USB Camera (HD Webcam C525)"
+USB\VID_046D&PID_082C.DeviceDesc="Logicool USB Camera (HD Webcam C615)"
+USB\VID_046D&PID_082D.DeviceDesc="Logicool USB Camera (HD Pro Webcam C920)"
+USB\VID_046D&PID_0834.DeviceDesc="Logicool USB Camera (BC920 HD Pro Webcam)"
+USB\VID_046D&PID_0836.DeviceDesc="Logicool USB Camera (B525 HD Webcam)"
+USB\VID_046D&PID_0990.DeviceDesc="Logicool USB Camera (Pro 9000)"
+USB\VID_046D&PID_0991.DeviceDesc="Logicool USB Camera (Pro for Notebooks)"
+USB\VID_046D&PID_0994.DeviceDesc="Logicool USB Camera (Orbit/Sphere AF)"
+USB\VID_046D&PID_09A5.DeviceDesc="Logicool USB Camera (Qcam 3000)"
+
+
+
