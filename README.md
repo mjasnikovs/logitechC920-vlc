@@ -48,3 +48,8 @@ ffmpeg -hwaccel qsv -threads 1 -fflags nobuffer -f dshow -video_size 1920x1080 -
 ```
 ffmpeg -y -loglevel panic -hwaccel qsv -threads 1 -fflags nobuffer -flags low_delay -strict experimental -f dshow -video_size 1280x720 -framerate 10 -pixel_format yuyv422 -i video="C922 Pro Stream Webcam" -codec:v libx264 -preset ultrafast -crf 24 -tune zerolatency -map 0 -f segment -segment_time 600 -segment_wrap 2 -reset_timestamps 1 dvr_%%04d.avi -codec:v copy -f nut - | ffplay -fflags nobuffer -flags low_delay -vf scale=1920x1080:flags=lanczos -window_title "kamera" -noborder -left 1920 -top 150 -fast -framedrop -
 ```
+
+## Linux
+```
+ffmpeg -y -loglevel panic -fflags nobuffer -flags low_delay -strict experimental -f v4l2 -video_size 1280x720 -framerate 30 -pixel_format yuv420p -i /dev/video0 -codec:v libx264 -preset ultrafast -crf 24 -tune zerolatency -map 0 -f segment -segment_time 600 -segment_wrap 1440 -reset_timestamps 1 dvr_%%d.avi -codec:v copy -f nut - | ffplay -fflags nobuffer -flags low_delay -vf scale=1920x1080:flags=lanczos -window_title "kamera" -noborder -left 1920 -top 0 -fast -framedrop -
+```
